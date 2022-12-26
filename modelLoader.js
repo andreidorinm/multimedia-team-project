@@ -33,7 +33,7 @@ export function modelLoader() {
   //load the gltf model
   const loader = new GLTFLoader();
   loader.load(
-    'models/alfa.glb',
+    'models/cafea.glb',
     (gltf) => {
       const model = gltf.scene;
       model.position.set(0, 0, 0);
