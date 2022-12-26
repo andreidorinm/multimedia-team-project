@@ -1,5 +1,6 @@
 import './style.scss';
 import { modelLoader } from './3dModelLoader.js';
+import { load } from './loader';
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -8,3 +9,4 @@ document.querySelector('#app').innerHTML = `
 `;
 
 modelLoader();
+load();
