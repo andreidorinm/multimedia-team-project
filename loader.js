@@ -3,9 +3,7 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 
 export function load() {
   const manager = new THREE.LoadingManager();
-  manager.onStart = function (url, itemsLoaded, itemsTotal) {
-    
-  };
+  manager.onStart = function (url, itemsLoaded, itemsTotal) {};
 
   manager.onLoad = function () {};
 
@@ -26,7 +24,7 @@ export function load() {
   };
 
   const loader = new GLTFLoader(manager);
-  loader.load('/models/alfa.glb', function (object) {
+  loader.load('/models/cafea.glb', function (object) {
     console.log(object);
   });
 }
