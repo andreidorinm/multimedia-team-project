@@ -4,7 +4,7 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 
 export function modelLoader() {
   const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-  renderer.setSize(4000, 2400);
+  renderer.setSize(1750, 850);
   renderer.setClearColor(0xededed, 0);
   const div = document.getElementById('threejs');
   div.appendChild(renderer.domElement);
