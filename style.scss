@@ -35,48 +35,54 @@ a:hover {
 
     .my-progress {
       width: 50%;
-      background-color: grey;
+      background: linear-gradient(
+        to top,
+        #c4c5c7 0%,
+        #dcdddf 52%,
+        #ebebeb 100%
+      );
 
       #my-bar {
-        position: relative;
-        width: 1%;
-        height: 30px;
-        background-color: green;
+        width: 2%;
+        height: 75px;
+        background-image: linear-gradient(132deg, #f4d03f 0%, #16a085 100%);
       }
     }
   }
 }
 
-.button {
+.btn-click-me {
+  display: flex;
+  margin-left: 25px;
+  height: 50px;
+  width: 300px;
+  background-image: linear-gradient(
+    to right,
+    #1a2980 0%,
+    #26d0ce 51%,
+    #1a2980 100%
+  );
+  padding: 11px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
   border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
 
   &:hover {
-    border-color: #646cff;
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
   }
 
-  &:focus,
-  &:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color;
+  .btn-click-me-text {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 700;
   }
 }
-
-// @media (prefers-color-scheme: light) {
-//   :root {
-//     color: #213547;
-//     background-color: #ffffff;
-//   }
-//   a:hover {
-//     color: #747bff;
-//   }
-//   button {
-//     background-color: #f9f9f9;
-//   }
-// }

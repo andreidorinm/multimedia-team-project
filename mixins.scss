@@ -1,0 +1,79 @@
+$color: #111;
+$primary: #ffab9d;
+
+@mixin button($color, $primary) {
+  margin-left: 9.375rem;
+  height: 12rem;
+  width: 500px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 9;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: $color;
+  color: $primary;
+}
+
+@mixin link($color, $primary) {
+  font-weight: 500;
+  color: $color;
+  text-decoration: inherit;
+}
+
+@mixin app($color, $primary) {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(0deg, $color 0%, $primary 100%);
+}
+
+@mixin threejs($color, $primary) {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin container-progress-bar($color, $primary) {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin-top: 60rem;
+  bottom: 100rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin my-progress($color, $primary) {
+  width: 50%;
+  background-color: $color;
+}
+
+@mixin my-bar($color, $primary) {
+  width: 10%;
+  height: 12.5rem;
+  background-image: linear-gradient(45deg, $color 0%, $primary 100%);
+}
+
+@mixin container($color, $primary) {
+  margin-left: 9.375rem;
+  height: 12rem;
+  width: 500px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 9;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: $color;
+  color: $primary;
+}
+
+@mixin colors {
+  $color: #111;
+  $primary: #ffab9d;
+}

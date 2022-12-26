@@ -6,7 +6,9 @@ document.querySelector('.container-progress-bar').innerHTML = `
     <div class="my-progress">
       <div id="my-bar"></div>
     </div>
-    <div class="button"></div >
+    <div class="btn-click-me">
+     <span class="btn-click-me-text">hai la cafelutza</span>
+    </div>
 `;
 
 document.querySelector('#threejs').innerHTML = `
@@ -14,6 +16,6 @@ document.querySelector('#threejs').innerHTML = `
 `;
 
 //add an event for barmove
-document.querySelector('.button').addEventListener('click', barMove);
+document.querySelector('.btn-click-me').addEventListener('click', barMove);
 
 modelLoader();
