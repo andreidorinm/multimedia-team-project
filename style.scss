@@ -1,100 +1,78 @@
-// body {
-//   margin: 0;
-// }
-// :root {
-//   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-//   font-size: 16px;
-//   line-height: 24px;
-//   font-weight: 400;
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
 
-//   color-scheme: light dark;
-//   color: rgba(255, 255, 255, 0.87);
-//   background-color: #242424;
+.app {
+  display: flex;
+}
 
-//   font-synthesis: none;
-//   text-rendering: optimizeLegibility;
-//   -webkit-font-smoothing: antialiased;
-//   -moz-osx-font-smoothing: grayscale;
-//   -webkit-text-size-adjust: 100%;
-// }
+.app {
+  display: flex;
+  flex-direction: column;
 
-// a {
-//   font-weight: 500;
-//   color: #646cff;
-//   text-decoration: inherit;
-// }
-// a:hover {
-//   color: #535bf2;
-// }
+  #threejs {
+    background-color: blue;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-// body {
-//   margin: 0;
-//   display: flex;
-//   place-items: center;
-//   min-width: 320px;
-//   min-height: 100vh;
-// }
+  .container-progress-bar {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-// h1 {
-//   font-size: 3.2em;
-//   line-height: 1.1;
-// }
+    .my-progress {
+      width: 50%;
+      background-color: grey;
 
-// #app {
-//   max-width: 1280px;
-//   margin: 0 auto;
-//   padding: 2rem;
-//   text-align: center;
-// }
+      #my-bar {
+        width: 1%;
+        height: 30px;
+        background-color: green;
+      }
+    }
+  }
+}
 
-// .logo {
-//   height: 6em;
-//   padding: 1.5em;
-//   will-change: filter;
-// }
-// .logo:hover {
-//   filter: drop-shadow(0 0 2em #646cffaa);
-// }
-// .logo.vanilla:hover {
-//   filter: drop-shadow(0 0 2em #f7df1eaa);
-// }
+.button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
 
-// .card {
-//   padding: 2em;
-// }
+  .button:hover {
+    border-color: #646cff;
+  }
 
-// .read-the-docs {
-//   color: #888;
-// }
+  .button:focus,
+  .button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+}
 
-// button {
-//   border-radius: 8px;
-//   border: 1px solid transparent;
-//   padding: 0.6em 1.2em;
-//   font-size: 1em;
-//   font-weight: 500;
-//   font-family: inherit;
-//   background-color: #1a1a1a;
-//   cursor: pointer;
-//   transition: border-color 0.25s;
-// }
-// button:hover {
-//   border-color: #646cff;
-// }
-// button:focus,
-// button:focus-visible {
-//   outline: 4px auto -webkit-focus-ring-color;
-// }
-
-// @media (prefers-color-scheme: light) {
-//   :root {
-//     color: #213547;
-//     background-color: #ffffff;
-//   }
-//   a:hover {
-//     color: #747bff;
-//   }
-//   button {
-//     background-color: #f9f9f9;
-//   }
-// }
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
