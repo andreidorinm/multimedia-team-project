@@ -2,9 +2,9 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 
-export function modelLoader() {
+export default function modelLoader() {
+  let width = parseInt(window.innerWidth);
   const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-  renderer.setSize(1750, 850);
   renderer.setClearColor(0xededed, 0);
   const div = document.getElementById('threejs');
   div.appendChild(renderer.domElement);
@@ -46,4 +46,18 @@ export function modelLoader() {
       console.error(error);
     }
   );
+  if (width <= 500) {
+    //max-width 500px
+    renderer.setSize(100, 100);
+  } else if (width > 500 && width <= 850) {
+    //max-width 850px
+    renderer.setSize(100, 100);
+  } else {
+    // 850px and beyond
+    renderer.setSize(1750, 850);
+  }
+
+  window.addEventListener('resize', () => {
+    renderer.setSize(100, 100);
+  });
 }

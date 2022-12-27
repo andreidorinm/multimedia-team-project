@@ -1,4 +1,4 @@
-export function barMove() {
+export default function barMove() {
   let i = 0;
   if (i == 0) {
     i = 1;

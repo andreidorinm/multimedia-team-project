@@ -1,6 +1,7 @@
 import './style.scss';
-import { modelLoader } from './loaders/modelLoader.js';
-import { barMove } from './components/progressBar.js';
+import modelLoader from './loaders/modelLoader.js';
+import barMove from './components/progressBar.js';
+import resizeFn from './loaders/resizeFn.js';
 
 document.querySelector('.container-progress-bar').innerHTML = `
     <div class="my-progress">
@@ -19,3 +20,4 @@ document.querySelector('#threejs').innerHTML = `
 document.querySelector('.btn-click-me').addEventListener('click', barMove);
 
 modelLoader();
+resizeFn();
