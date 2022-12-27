@@ -199,11 +199,6 @@ glob-parent@~5.1.2:
   dependencies:
     is-glob "^4.0.1"
 
-gltfpack@^0.18.0:
-  version "0.18.0"
-  resolved "https://registry.yarnpkg.com/gltfpack/-/gltfpack-0.18.0.tgz#cb7dd31893ee9a1757ee766c069b4cee6998b3a6"
-  integrity sha512-EgMFTbd+N1uhOqn0XN+97aQHVOTM7gdoZRx8EB4LssT2OXxkN92pVQ+6FxRcELIySkOH+AO60qDHTZgD3HI1CQ==
-
 has@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/has/-/has-1.0.3.tgz#722d7cbfc1f6aa8241f16dd814e011e1f41e8796"

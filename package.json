@@ -12,7 +12,6 @@
     "vite": "^3.2.3"
   },
   "dependencies": {
-    "gltfpack": "^0.18.0",
     "sass": "^1.57.1",
     "three": "^0.148.0"
   }
