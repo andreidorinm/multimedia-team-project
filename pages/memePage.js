@@ -1,5 +1,4 @@
 import progressBar from '../components/progressBar';
-import barMove from '../components/progressBar';
 
 export default function memePage() {
   const template = '<h1>Details</h1> <p>Some highly useful information</p>';
@@ -9,8 +8,8 @@ export default function memePage() {
   registerHandler();
 
   function registerHandler() {
-    document.getElementById('container-progress-bar').onclick = (_event) => {
-      history.pushState({}, '', '/details');
+    document.getElementById('btn-click-me').onclick = (_event) => {
+      history.pushState({}, '', '/');
 
       bodyHistory.push(document.body.innerHTML);
       document.body.innerHTML = template;
@@ -21,6 +20,7 @@ export default function memePage() {
     const previousContent = bodyHistory.pop();
 
     if (previousContent) {
+      location.reload();
       document.body.innerHTML = previousContent;
       registerHandler();
     }
