@@ -1,4 +1,4 @@
-export default function barMove() {
+export default function progressBar() {
   let i = 0;
   if (i == 0) {
     i = 1;
