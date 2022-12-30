@@ -3,6 +3,7 @@ import './node_modules/aesthetic-css/aesthetic.css';
 import modelLoader from './loaders/modelLoader.js';
 import progressBar from './components/progressBar.js';
 import elemHandler from './handlers/elemHandler';
+import memePage from './pages/memePage';
 
 document.querySelector('.container-progress-bar').innerHTML = `
 <div class="aesthetic-windows-95-loader">
@@ -23,6 +24,6 @@ document.querySelector('#threejs').innerHTML = `
 `;
 
 //add an event for barmove
-document.querySelector('#btn-click-me').addEventListener('click', progressBar);
 
 modelLoader();
+memePage();
