@@ -1,8 +1,6 @@
-import './style.scss';
-import './node_modules/aesthetic-css/aesthetic.css';
+import './style.css';
 import modelLoader from './loaders/modelLoader.js';
 import progressBar from './components/progressBar.js';
-import elemHandler from './handlers/elemHandler';
 
 document.querySelector('.container-progress-bar').innerHTML = `
 <div class="aesthetic-windows-95-loader">
