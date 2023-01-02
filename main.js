@@ -6,7 +6,8 @@ import injectBackgroundText from './helpers/injectBackgroundText.js';
 document.querySelector('.container-progress-bar').innerHTML = `
 <div class="aesthetic-windows-95-loader">
     <div id="my-progress">
-      <div id="my-bar"></div>
+      <div id="my-bar">
+      </div>
     </div>
   </div>
   <div class="aesthetic-windows-95-button">

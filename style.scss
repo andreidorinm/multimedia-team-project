@@ -61,12 +61,17 @@ body {
       font-size: 0;
 
       #my-progress {
-        background: #000084;
         width: 5%;
+        opacity: 0.5;
+        background: linear-gradient(
+          to right,
+          #bfbfbf 0%,
+          #000084 15%,
+          #000084 85%,
+          #bfbfbf 100%
+        );
 
         #my-bar {
-          background: #000084;
-          width: 0%;
           height: 75px;
         }
       }
@@ -75,7 +80,14 @@ body {
     .aesthetic-windows-95-button > * {
       padding: 7px;
       &:hover {
-        background-color: #bfbfbf;
+        opacity: 0.5;
+        background: linear-gradient(
+          to right,
+          #bfbfbf 0%,
+          #000084 15%,
+          #000084 85%,
+          #bfbfbf 100%
+        );
       }
     }
 
