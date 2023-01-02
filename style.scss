@@ -1,0 +1,112 @@
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+html,
+body {
+  display: flex;
+  margin: 0;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.app {
+  width: 100%;
+  height: 100%;
+  background-color: #00006e;
+  display: flex;
+  flex-direction: column;
+
+  .background-text {
+    height: 0;
+    font-family: Consolas, monaco, monospace;
+    color: white;
+    font-size: 30px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 00;
+    line-height: 56.4px;
+  }
+
+  #threejs {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-progress-bar {
+    width: 100%;
+    height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .aesthetic-windows-95-loader {
+      width: 50rem;
+      height: 50px;
+      border-top: 1px solid #000;
+      border-left: 1px solid #000;
+      border-right: 1px solid #dfdfdf;
+      border-bottom: 1px solid #dfdfdf;
+      border-radius: 0px;
+      padding: 1px 1px;
+      background-color: #bfbfbf;
+      overflow: hidden;
+      font-size: 0;
+
+      #my-progress {
+        background: #000084;
+        width: 5%;
+
+        #my-bar {
+          background: #000084;
+          width: 0%;
+          height: 75px;
+        }
+      }
+    }
+
+    .aesthetic-windows-95-button > * {
+      padding: 7px;
+      &:hover {
+        background-color: #bfbfbf;
+      }
+    }
+
+    .aesthetic-windows-95-button {
+      background-color: #bfbfbf;
+      margin-left: 25px;
+      height: 50px;
+      width: 300px;
+      padding: 2px;
+      text-transform: uppercase;
+      cursor: pointer;
+      user-select: none;
+
+      #btn-click-me {
+        &:hover {
+          color: blue;
+        }
+
+        .btn-click-me-text {
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 1.8rem;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+#game {
+  display: none;
+}

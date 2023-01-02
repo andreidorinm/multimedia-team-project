@@ -48,16 +48,16 @@ export default function modelLoader() {
   );
   if (width <= 500) {
     //max-width 500px
-    renderer.setSize(100, 100);
+    renderer.setSize(650, 450);
   } else if (width > 500 && width <= 850) {
     //max-width 850px
-    renderer.setSize(100, 100);
+    renderer.setSize(650, 450);
   } else {
     // 850px and beyond
-    renderer.setSize(1750, 850);
+    renderer.setSize(1350, 650);
   }
 
   window.addEventListener('resize', () => {
-    renderer.setSize(100, 100);
+    renderer.setSize(650, 450);
   });
 }
