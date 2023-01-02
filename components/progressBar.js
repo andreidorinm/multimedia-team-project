@@ -19,6 +19,6 @@ export default function progressBar() {
   }
 
   setTimeout(() => {
-    document.getElementById('text').innerHTML = `<span>Now Press Enter</span>`;
+    document.getElementById('text').innerHTML = `<span>now press enter</span>`;
   }, 8100);
 }
