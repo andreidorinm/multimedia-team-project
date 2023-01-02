@@ -17,4 +17,8 @@ export default function progressBar() {
       }
     }
   }
+
+  setTimeout(() => {
+    document.getElementById('text').innerHTML = `<span>Now Press Enter</span>`;
+  }, 8100);
 }
