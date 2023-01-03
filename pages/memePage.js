@@ -1,25 +1,29 @@
 export default function memePage() {
-  let html = (document.querySelector('.app').innerHTML = ``);
+  //   let html = (document.querySelector('#game-cafeluta').innerHTML = `
+  //   <div class="background-white"></div>
+  // `);
 
-  registerHandler();
+  //change color of a div on keypress
+  document.querySelector('.app').style.background =
+    'url(./assets/images/pool.jpg)';
+  document.querySelector('#threejs').style.display = 'none';
+  document.querySelector('.container-progress-bar').style.display = 'none';
+  document.querySelector('.background-text').style.display = 'none';
+  // history.pushState({}, '', '/');
+  // bodyHistory.push(document.body.innerHTML);
+  // document.body.innerHTML = html;
 
-  const bodyHistory = [];
+  // const bodyHistory = [];
 
-  function registerHandler() {
-    document.getElementById('btn-click-me').onkeypress = (_event) => {
-      history.pushState({}, '', '/');
-      bodyHistory.push(document.body.innerHTML);
-      document.body.innerHTML = html;
-    };
-  }
+  function registerHandler() {}
 
-  onpopstate = (_event) => {
-    const previousContent = bodyHistory.pop();
+  // onpopstate = (_event) => {
+  //   const previousContent = bodyHistory.pop();
 
-    if (previousContent) {
-      location.reload();
-      document.body.innerHTML = previousContent;
-      registerHandler();
-    }
-  };
+  //   if (previousContent) {
+  //     location.reload();
+  //     document.body.innerHTML = previousContent;
+  //     registerHandler();
+  //   }
+  // };
 }
