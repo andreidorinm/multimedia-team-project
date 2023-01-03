@@ -15,12 +15,11 @@
     </div>
     <script type="module" src="/main.js"></script>
     <div class="game-container">
-      <canvas
-        id="game-cafeluta"
-        width="200"
-        height="200"
-        style="border: 2px solid #000000"
-      ></canvas>
+      <canvas id="game-cafeluta" width="100" height="100"></canvas>
+    </div>
+    <div class="keyboard">
+      <div class="keyboard-text-container"></div>
+      <span class="text-keyboard">Misca tastele</span>
     </div>
     <div class="background-white"></div>
     <script>
@@ -47,16 +46,16 @@
         const lwidth = 100;
         const lheight = 100;
         room.onload = function () {
-          context.drawImage(room, lx, ly, lwidth, lheight, li, lo, 200, 200);
+          context.drawImage(room, lx, ly, lwidth, lheight, li, lo, 100, 100);
         };
-        room.src = './assets/game/bucatarie.png';
+        room.src = './assets/images/pool-good.png';
 
         const sprite = new Image();
         const swidth = 35;
         const sheight = 34;
         const sy = 0;
         sprite.onload = function () {
-          context.drawImage(sprite, 0, sy, swidth, sheight, 0, cy, 50, 50);
+          context.drawImage(sprite, 0, sy, swidth, sheight, 0, cy, 100, 100);
         };
         sprite.src = './assets/game/character-daniel.png';
 

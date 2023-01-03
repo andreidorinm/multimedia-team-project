@@ -13,6 +13,7 @@ body {
   margin: 0;
   min-height: 100%;
   min-width: 100%;
+  overflow: hidden;
 }
 
 .app {
@@ -22,34 +23,6 @@ body {
   display: flex;
   flex-direction: column;
   z-index: 2;
-
-  .game-container {
-    z-index: 10;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 1000;
-
-    #game-cafeluta {
-      margin-top: 175px;
-      margin-left: 660px;
-      z-index: 1000;
-    }
-  }
-
-  @media (min-width: 992px) and (max-width: 2000px) {
-    #game-container {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      z-index: 5;
-      #Game {
-        margin-top: 175px;
-        margin-left: 860px;
-        z-index: 5;
-      }
-    }
-  }
 
   #text {
     z-index: 2;
@@ -168,10 +141,70 @@ body {
   }
 }
 
-.background-white {
-  z-index: 20;
+.game-container {
   position: absolute;
+  display: none;
   width: 100%;
   height: 100%;
+  z-index: 1000;
+  overflow: hidden;
+  margin-top: 200px;
+
+  #game-cafeluta {
+    box-shadow: -33px -16px 44px black;
+    width: 200px;
+    height: 200px;
+    z-index: 1000;
+  }
+}
+
+.keyboard {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  display: none;
+  margin-top: 5rem;
+  margin-left: 45rem;
+  z-index: 200;
+}
+
+.text-keyboard {
+  position: absolute;
+  width: 30rem;
+  height: 30rem;
+  display: none;
+  margin-top: 558px;
+  margin-left: 220px;
+  z-index: 2;
+  font-family: Consolas, monaco, monospace;
+  color: white;
+  font-size: 40px;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: uppercase;
+  font-weight: 100;
+  z-index: 2;
+}
+
+@media (min-width: 992px) and (max-width: 2000px) {
+  #game-container {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+
+    #Game {
+      z-index: 5;
+    }
+  }
+}
+
+.background-white {
+  overflow: hidden;
+  z-index: 20;
+  position: absolute;
+  width: 100px;
+  height: 100px;
   background-color: transparent;
 }

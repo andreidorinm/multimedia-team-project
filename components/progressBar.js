@@ -1,7 +1,7 @@
 export default function progressBar() {
   let i = 0;
-  // let audio = new Audio('assets/sounds/win98.mp3');
-  // audio.play();
+  let audio = new Audio('assets/sounds/win98.mp3');
+  audio.play();
   if (i == 0) {
     i = 1;
     let elem = document.getElementById('my-progress');
@@ -19,6 +19,8 @@ export default function progressBar() {
   }
 
   setTimeout(() => {
-    document.getElementById('text').innerHTML = `<span>now press enter</span>`;
+    document.getElementById(
+      'text'
+    ).innerHTML = `<span>s-a stricat cafelutza apasa enter sa o gasim impreuna</span>`;
   }, 8100);
 }
