@@ -1,4 +1,4 @@
-import './style.scss';
+import './style.css';
 import modelLoader from './loaders/modelLoader.js';
 import progressBar from './components/progressBar.js';
 import injectBackgroundText from './helpers/injectBackgroundText.js';

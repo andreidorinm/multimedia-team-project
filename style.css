@@ -1,0 +1,191 @@
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+html,
+body {
+  display: flex;
+  margin: 0;
+  min-height: 100%;
+  min-width: 100%;
+  overflow: hidden;
+}
+.app {
+  width: 100%;
+  height: 100%;
+  background-color: #00006e;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+}
+.app #text {
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app #text span {
+  font-family: Consolas, monaco, monospace;
+  color: red;
+  font-size: 60px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-top: -165px;
+}
+.app .background-text {
+  height: 0;
+  font-family: Consolas, monaco, monospace;
+  color: white;
+  font-size: 30px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 0;
+  line-height: 56.4px;
+  z-index: 2;
+}
+.app #threejs {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -60px;
+  z-index: 100;
+}
+.app .container-progress-bar {
+  z-index: 10;
+  width: 100%;
+  height: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app .container-progress-bar .windows-95-loader {
+  width: 50rem;
+  height: 50px;
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  border-right: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+  border-radius: 0px;
+  padding: 1px 1px;
+  background-color: #bfbfbf;
+  overflow: hidden;
+  font-size: 0;
+}
+.app .container-progress-bar .windows-95-loader #my-progress {
+  width: 5%;
+  opacity: 0.5;
+  background: linear-gradient(
+    to right,
+    #bfbfbf 0%,
+    #000084 15%,
+    #000084 85%,
+    #bfbfbf 100%
+  );
+}
+.app .container-progress-bar .windows-95-loader #my-progress #my-bar {
+  height: 75px;
+}
+.app .container-progress-bar .windows-95-button > * {
+  padding: 7px;
+}
+.app .container-progress-bar .windows-95-button > *:hover {
+  opacity: 0.5;
+  background: linear-gradient(
+    to right,
+    #bfbfbf 0%,
+    #000084 15%,
+    #000084 85%,
+    #bfbfbf 100%
+  );
+}
+.app .container-progress-bar .windows-95-button {
+  background-color: #bfbfbf;
+  margin-left: 25px;
+  height: 50px;
+  width: 300px;
+  padding: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  user-select: none;
+}
+.app .container-progress-bar .windows-95-button #btn-click-me:hover {
+  color: blue;
+}
+.app
+  .container-progress-bar
+  .windows-95-button
+  #btn-click-me
+  .btn-click-me-text {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.game-container {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  overflow: hidden;
+  margin-top: 200px;
+}
+.game-container #game-cafeluta {
+  box-shadow: -33px -16px 44px black;
+  width: 200px;
+  height: 200px;
+  z-index: 1000;
+}
+.keyboard {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  display: none;
+  margin-top: 5rem;
+  margin-left: 45rem;
+  z-index: 200;
+}
+.text-keyboard {
+  position: absolute;
+  width: 30rem;
+  height: 30rem;
+  display: none;
+  margin-top: 558px;
+  margin-left: 220px;
+  z-index: 2;
+  font-family: Consolas, monaco, monospace;
+  color: white;
+  font-size: 40px;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: uppercase;
+  font-weight: 100;
+  z-index: 2;
+}
+@media (min-width: 992px) and (max-width: 2000px) {
+  #game-container {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+  }
+  #game-container #Game {
+    z-index: 5;
+  }
+}
+.background-white {
+  overflow: hidden;
+  z-index: 20;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+}
