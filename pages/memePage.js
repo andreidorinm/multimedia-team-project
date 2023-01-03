@@ -1,16 +1,5 @@
-import progressBar from '../components/progressBar';
-
 export default function memePage() {
-  let template = document.getElementById('game');
-  const canvas = template.content.getElementById('canvas');
-  const context = canvas.getContext('2d');
-
-  // Draw a liminal space with a gradient fill
-  var gradient = context.createLinearGradient(0, 0, 0, canvas.height);
-  gradient.addColorStop(0, '#000000');
-  gradient.addColorStop(1, '#ffffff');
-  context.fillStyle = gradient;
-  context.fillRect(0, 0, canvas.width, canvas.height);
+  let html = (document.querySelector('.app').innerHTML = ``);
 
   registerHandler();
 
@@ -20,7 +9,7 @@ export default function memePage() {
     document.getElementById('btn-click-me').onkeypress = (_event) => {
       history.pushState({}, '', '/');
       bodyHistory.push(document.body.innerHTML);
-      document.body.innerHTML = canvas;
+      document.body.innerHTML = html;
     };
   }
 
