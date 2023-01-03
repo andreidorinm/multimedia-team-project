@@ -1,8 +1,8 @@
 export default function memePage() {
-  let audio = new Audio('assets/sounds/audiocafea.mp3');
+  let audio = new Audio('public/sounds/audiocafea.mp3');
   audio.play();
   document.querySelector('.app').style.background =
-    'url(./assets/images/liminalpool.jpg)';
+    'url(./public/images/liminalpool.jpg)';
   document.querySelector('#threejs').style.display = 'none';
   document.querySelector('.container-progress-bar').style.display = 'none';
   document.querySelector('.background-text').style.display = 'none';
@@ -15,6 +15,6 @@ export default function memePage() {
   document.querySelector('.keyboard').style.alignItems = 'center';
   document.querySelector('.keyboard').style.flexDirection = 'flex-column';
   document.querySelector('.keyboard').style.background =
-    'url(./assets/images/keyboard.png)';
+    'url(./public/images/keyboard.png)';
   document.querySelector('.text-keyboard').style.display = 'flex';
 }

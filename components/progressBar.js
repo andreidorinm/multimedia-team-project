@@ -1,6 +1,6 @@
 export default function progressBar() {
   let i = 0;
-  let audio = new Audio('assets/sounds/win98.mp3');
+  let audio = new Audio('public/sounds/win98.mp3');
   audio.play();
   if (i == 0) {
     i = 1;
