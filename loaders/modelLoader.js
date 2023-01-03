@@ -34,7 +34,7 @@ export default function modelLoader() {
   //load the gltf model
   const loader = new GLTFLoader();
   loader.load(
-    'models/scene.gltf',
+    './assets/scene.gltf',
     (gltf) => {
       const model = gltf.scene;
       model.position.set(0, 0, 0);
